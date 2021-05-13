@@ -5,7 +5,7 @@ Agenda virtual para otimizar a rotina do empreendedor e do cliente. A funcionali
 Status
 ============
 ```
-O Projeto em andamento.
+Projeto em andamento.
 ```
 
 Funcionalidades
