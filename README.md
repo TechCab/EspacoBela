@@ -1,8 +1,7 @@
 Sobre
 =========
 Agenda virtual para otimizar a rotina do empreendedor e do cliente. A funcionalidade de agendamento possibilita o atendimento eletrônico e simultâneo com mais de um cliente por  
-vez, deixando o profissional livre para atividades fins do estabelecimento; enquanto que  
-o cliente terá a conveniência de escolher datas e horários quando desejar.
+vez, deixando o profissional livre para atividades fins do estabelecimento; enquanto que o cliente terá a conveniência de escolher datas e horários quando desejar.
 
 Status
 ============
