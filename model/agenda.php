@@ -5,8 +5,6 @@ class Servico {
     private $hora;
     private $data;
     private $status;
-    private $servico_id;
-    private $cliente_id;
 }
 public function setID($id)
 {
@@ -40,5 +38,4 @@ public function getStatus()
 {
     return $this->status;
 }
-
-?>
+?> 
