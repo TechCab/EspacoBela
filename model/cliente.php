@@ -78,7 +78,7 @@ public function getDatacadastro()
 
 public function inserirBD()
 {
-    require_once 'ConexaoBD.php';
+    require_once 'conexaoBD.php';
 
     $con = new ConexaoBD();
     $conn = $con->conectar();
