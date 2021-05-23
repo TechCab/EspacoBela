@@ -14,7 +14,7 @@
     <input type="email" name="email_cad" required="required"  placeholder="E-mail"> 
     <input type="senha"  name="senha_cad" required="required" placeholder="Senha">
     <input type="submit" value="entrar"> 
-    <a href="cadastro.php"> Novo por aqui? <strong>Cadastre-se</a>
+    <a href="cadastroUsuario.php"> Novo por aqui? <strong>Cadastre-se</a>
     <a href=""> Esqueceu senha? <strong>Recupere</a>
 </form>
 </div>
