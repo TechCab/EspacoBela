@@ -11,7 +11,7 @@
     <div id="corpo-form">
     <h1>Cadastre o Serviço</h1>    
         <form method = "POST">
-            <input type="text" name="nome_serv" required="required"  placeholder="Qual o nome do Servico?"> 
+            <input type="text" name="nome_serv" required="required"  placeholder="Qual o nome do Serviço?"> 
             <input type="number" name="preco_serv" required="required" placeholder="Qual Preço?">
             <input type="number" name="tempo_serv" required="required"  placeholder="Qual o tempo de execução do serviço?"> 
             <input type="submit" value="Cadastrar">    
