@@ -23,7 +23,7 @@
 			<h3>Espaço<span>Bela</span></h3>
 				<p class="footer-links">
 					<a class="link-1" href="index.html">Inicio</a>
-					<a href="cadastro.php">Cadastrar</a>
+					<a href="cadastroUsuario.php">Cadastrar</a>
 					<a href="login.php">Agendar</a>	
 					<a href="contato.php">Contato</a>
 				</p>
