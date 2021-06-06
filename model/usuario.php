@@ -4,12 +4,8 @@ class usuario {
     private $nome;
     private $senha;
     private $email;
-    private $tipo;
-    private $ativo;
-    private $datacadastro;
-}  
-
-//ID
+    
+    //ID
     public function setID($id)
     {
         $this-> id= $id;
@@ -19,7 +15,7 @@ class usuario {
         return $this->id;
     }
 
-//Nome
+    //Nome
     public function setNome($nome)
     {
         $this-> nome= $nome;
@@ -40,8 +36,7 @@ class usuario {
             return $this->senha;
         }
 
-
-//Email
+    //Email
 
     public function setEmail($email)
         {
@@ -51,38 +46,6 @@ class usuario {
         {
             return $this->email;
         }
-
- //tipo
-    public function setTipo($tipo)
-    {
-        $this-> tipo= $tipo;
-    }
-    public function getTipo()
-    {
-        return $this->tipo;
-    }
-
-//Ativo
-    public function setAtivo($ativo)
-    {
-        $this-> ativo= $ativo;
-    }
-    public function getTipo()
-    {
-        return  $this->ativo;
-    }
-//Data de Cadastro
-
-    public function setDatacadastro($datacadastro)
-    {
-        $this-> datacadastro= $datacadastro;
-    }
-    public function getDatacadastroo()
-    {
-        return $this->datacadastro;
-    }
-
-
-
+} 
 
 ?>
