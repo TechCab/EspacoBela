@@ -11,6 +11,7 @@
     <div id="corpo-form">
 <h1>Faça seu cadastro para agendar</h1>    
 <form method = "POST">
+    <input type="nome" name="nome" required="required"  placeholder="Nome e Sobrenome">     
     <input type="email" name="email_cad" required="required"  placeholder="E-mail"> 
     <input type="senha"  name="senha_cad" required="required" placeholder="Senha">
     <input type="date" name="datanasc_cad" required="required"  placeholder="Data de Nasc. xx/xx/xx"> 
