@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>AgendaEletronica</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./views/estilo.css" />
+  </head>
+
+  <body class="bg">
+    <div class="jumbotron text-center" style="margin-bottom: 0">
+      <h1>Espaço Bela</h1>
+      <p>Agendamento Eletrônico</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="./views/login.php">Agende</a>
+      <a class="navbar-brand" href="./views/contato.php "> Contate-nos</a>
+    </nav>
+
+    <div class="container">
+      <div class="w3-content w3-section w3-center" style="max-width: 500px">
+        <img class="slide" src="./views/img/img1.jpg" style="max-width: 100%" />
+        <img class="slide" src="./views/img/img2.jpg" style="max-width: 100%" />
+        <img class="slide" src="./views/img/img3.jpg" style="max-width: 100%" />
+        <img class="slide" src="./views/img/img4.png" style="max-width: 100%" />
+        <img class="slide" src="./views/img/img5.jpg" style="max-width: 100%" />
+      </div>
+
+      <script>
+        var index = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          index++;
+          if (index > x.length) {
+            index = 1;
+          }
+          x[index - 1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+      </script>
+    </div>
+  </body>
+</html>

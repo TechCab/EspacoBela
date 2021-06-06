@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url("./img/fundoLateral.png");
+    background-image: url("../views/img/fundoLateral.png");
     background-size: cover; 
     
 }
