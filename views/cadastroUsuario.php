@@ -13,7 +13,7 @@
 <form action= "../controller/Navegacao.php" method = "POST">
     <input type="nome" name="nome" required="required"  placeholder="Nome e Sobrenome">     
     <input type="email" name="email_cad" required="required"  placeholder="E-mail"> 
-    <input type="senha"  name="senha_cad" required="required" placeholder="Senha">
+    <input type="password"  name="senha_cad" required="required" placeholder="Senha">
   
 	<p>Quem é você?</p>
 	
@@ -25,7 +25,7 @@
 	</select><br />
    
 
-    <button name="Cadastrar"> Cadastrar </button> 
+    <button name="btnCadastrar"> Cadastrar </button> 
 
     <a href="login.php"> Já tem uma conta? <strong>Faça login aqui</a>
     <a href="index.html"> Voltar para tela inicial <strong>aqui</a>
