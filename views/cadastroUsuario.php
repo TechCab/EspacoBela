@@ -14,19 +14,9 @@
     <input type="nome" name="nome" required="required"  placeholder="Nome e Sobrenome">     
     <input type="email" name="email_cad" required="required"  placeholder="E-mail"> 
     <input type="password"  name="senha_cad" required="required" placeholder="Senha">
-  
-	<p>Quem é você?</p>
-	
-	<select name="education">
-		<option>Escolha</option>
-		<option>Administrador</option> 
-		<option>Cliente</option>
-		<option>Funcionário</option>
-	</select><br />
    
-
-    <button name="btnCadastrar"> Cadastrar </button> 
-
+    <input type="submit" name="btnCadastrar" value="Cadastrar"> 
+    
     <a href="login.php"> Já tem uma conta? <strong>Faça login aqui</a>
     <a href="index.html"> Voltar para tela inicial <strong>aqui</a>
 

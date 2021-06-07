@@ -25,8 +25,9 @@
         <option>Alongamento</option>
         <option>Luzes</option>
 	</select><br />
-  <input type="submit" value="Agendar"> 
-    <a href="index.html"> Voltar para tela inicial <strong>aqui</a>
+ 
+    <input type="submit" name="btnAgendar" value="Agendar"> 
+    <a href="/views/index.html"> Voltar para tela inicial <strong>aqui</a>
 </form>
 </div>
 </body>

@@ -77,7 +77,7 @@ class usuario {
            
            
            
-            public function carregarUsuario($cpf)
+            public function carregarUsuario($senha)
             {
                 require_once 'ConexaoBD.php';   
                 
@@ -87,17 +87,15 @@ class usuario {
                     die("Connection failed: " . $conn->connect_error);
                 } 
         
-                $sql = "SELECT * FROM usuario WHERE cpf =  ".$cpf ;
+                $sql = "SELECT * FROM usuario WHERE usuario_senha =  ".$senha ;
                 $re = $conn->query($sql);
                 $r = $re->fetch_object();
                 if($r != null)
                 {
-                    $this->id = $r->idusuario;
-                    $this->nome = $r->nome;
-                    $this->email = $r->email;
-                    $this->cpf = $r->cpf;
-                    $this->dataNascimento = $r->dataNascimento;
-                    $this->senha = $r->senha;
+                    $this->id = $r->usuario_Id;
+                    $this->nome = $r->usuario_nome;
+                    $this->email = $r->usuario_email;
+                    $this->senha = $r->usuario_senha;
                     $conn->close();
                     return true;
                 }

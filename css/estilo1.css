@@ -8,7 +8,7 @@ body{
     background-size: cover; 
     
 }
-input, select{
+input, select {
     display: block;
     height: 55px;
     width: 400px;

@@ -18,6 +18,22 @@ class UsuarioController{
         return $r;     
     }
 
+    public function login($email, $senha)
+    {
+        require_once '../Model/usuario.php';
+        $usuario = new usuario();
+        $usuario->carregarUsuario($senha);
+        if($usuario->getSenha() == $senha)
+        {
+            $_SESSION['usuario'] = serialize($usuario);
+            return true;
+        }
+        else
+        {
+            return false;
+        } 
+    }
+
 }
 
 ?>
