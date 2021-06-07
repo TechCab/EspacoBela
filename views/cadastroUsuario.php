@@ -10,7 +10,7 @@
 <body>
     <div id="corpo-form">
 <h1>Faça seu cadastro para agendar</h1>    
-<form method = "POST">
+<form action= "../controller/Navegacao.php" method = "POST">
     <input type="nome" name="nome" required="required"  placeholder="Nome e Sobrenome">     
     <input type="email" name="email_cad" required="required"  placeholder="E-mail"> 
     <input type="senha"  name="senha_cad" required="required" placeholder="Senha">
@@ -23,8 +23,9 @@
 		<option>Cliente</option>
 		<option>Funcionário</option>
 	</select><br />
+   
 
-  <input type="submit" value="Cadastrar"> 
+    <button name="Cadastrar"> Cadastrar </button> 
 
     <a href="login.php"> Já tem uma conta? <strong>Faça login aqui</a>
     <a href="index.html"> Voltar para tela inicial <strong>aqui</a>

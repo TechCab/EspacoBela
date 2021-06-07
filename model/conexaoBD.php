@@ -2,9 +2,9 @@
 
 class ConexaoBD{
 
-    private $servename = "localhost";
+    private $serveName = "localhost";
     private $userName = "root";
-    private $password = "12345678";
+    private $password = "usbw";
     private $dbName = "salao1";
 
     public function conectar()
