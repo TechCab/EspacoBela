@@ -13,7 +13,20 @@
 <form method = "POST">
     <p>Escolha sua data preferida:</p>
     <input type="date" name="dataAgenda_client" required="required"  placeholder="Dia do agendamento"> 
-	<p>Qual serviço você quer?</p>
+    <p>Selecione o horário desejado</p>
+	<select name="servico">
+		<option>09:00</option>
+		<option>10:00</option> 
+		<option>11:00</option>
+		<option>12:00</option>
+        <option>14:00</option>
+        <option>16:00</option>
+        <option>17:00</option>
+        <option>18:00</option>
+        <option>19:00</option>
+        <option>20:00</option>
+	</select><br />
+	<p>Qual serviço desejado?</p>
 	<select name="servico">
 		<option>Manicure</option>
 		<option>Pedicure</option> 
