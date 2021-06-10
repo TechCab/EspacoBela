@@ -42,6 +42,13 @@ CREATE TABLE `servico` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 	
-
-
+   CREATE TABLE IF NOT EXISTS `salao1`.`administrador` (
+    `idAdministrador` INT(11) NOT NULL AUTO_INCREMENT,
+    `nome` VARCHAR(45) NULL DEFAULT NULL,
+    `email` VARCHAR(45) NOT NULL,
+    `senha` VARCHAR(45) NOT NULL,
+    PRIMARY KEY (`idAdministrador`))
+    ENGINE = InnoDB
+    AUTO_INCREMENT = 2
+    DEFAULT CHARACTER SET = latin1;
 
