@@ -10,11 +10,12 @@
 <body>
     <div id="corpo-form">
 <h1>Agende seu serviço</h1>    
-<form method = "POST">
+<form action= "../controller/Navegacao.php" method = "POST">
+    
     <p>Escolha sua data preferida:</p>
-    <input type="date" name="dataAgenda_client" required="required"  placeholder="Dia do agendamento"> 
+    <input type="date" name="dataAgenda_cliente" required="required"  placeholder="Dia do agendamento"> 
     <p>Selecione o horário desejado</p>
-	<select name="servico">
+	<select name="horario">
 		<option>09:00</option>
 		<option>10:00</option> 
 		<option>11:00</option>

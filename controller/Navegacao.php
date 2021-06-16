@@ -65,7 +65,26 @@
                                     include_once '../views/loginADM.php';
                                 }
                             }
+                           
+                            else 
+                            {    
+                                if(isset($_POST["btnAgendar"]))
+                                    {
+                                        require_once '../Controller/AgendaController.php';
+                                        $uController = new AgendaController();
+                                
+                                    if($uController->inserir ($_POST["horario"], date('Y-m-d', strtotime($_POST['dataAgenda_cliente']))))
+                                    {
+                                        include_once '../views/agendamento.php';
+                                    }
+                                    else
+                                    {
+                                        include_once '../index.html';
+                                    }
+                                }
+                            }
                         }                       
                     }
                 }
+            
 ?>
