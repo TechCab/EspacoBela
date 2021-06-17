@@ -8,22 +8,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet"  href="../css/estilo1.css">
-    <title>login Administrador</title>
+    <title>Lista de CLientes</title>
 </head>
 <body>
-    <div id="corpo-form">
-    <h1>Controle Administrador</h1>  
 
-    <div class="container">
-        <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Disponibilizar Agenda</a></li>
-        <li><a href="../views/listaCliente.php">Ver CLientes</a></li>
-        <li><a href="../views/listaADM.php">Ver Administradores</a></li>
-        <li><a href="#">Ver Agendamentos </a></li>
-    </ul>
-    <br>
-    <p> Selecione a função desejada
-</div>
+<?php
+
+        include_once '../model/usuario.php';
+        include_once '../controller/UsuarioController.php';
+
+        if(!isset($_SESSION))
+        {
+            session_start();
+        }
+?>
+        <div id="corpo-form">
+        <h1>Clientes Cadastrados</h1>
+
+
 </body>
 </html>
