@@ -7,11 +7,11 @@ if(!isset($_SESSION))
 class AgendaController{
     
     
-    public function inserir($data, $hora) {
+    public function inserir($hora, $data) {
         require_once '../Model/agenda.php';
         $agenda = new Agenda();
-        $agenda->setData($data);
-        $agenda->setHora($hora);     
+        $agenda->setHora($hora);
+        $agenda->setData($data);     
         $r = $agenda->inserirBD();
         $_SESSION['agenda'] = serialize($agenda);
         return $r;     

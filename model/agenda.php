@@ -49,8 +49,8 @@ class Agenda {
                 die("Connection failed: " . $conn->connect_error);
             } 
     
-            $sql = "INSERT INTO agenda (agenda_data, agenda_hora)
-            VALUES ('".$this->data."', '".$this->hora."')";
+            $sql = "INSERT INTO agenda (agenda_hora, agenda_data)
+            VALUES ('".$this->hora."', '".$this->data."')";
     
             if ($conn->query($sql) === TRUE) {
                 $this->id = mysqli_insert_id($conn);

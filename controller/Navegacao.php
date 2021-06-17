@@ -75,7 +75,7 @@
                                 
                                     if($uController->inserir ($_POST["horario"], date('Y-m-d', strtotime($_POST['dataAgenda_cliente']))))
                                     {
-                                        include_once '../views/agendamento.php';
+                                        include_once '../views/confirmaAgendamento.php';
                                     }
                                     else
                                     {
