@@ -57,9 +57,11 @@ img.logo {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 1000px;
 }
 
+.container img {
+  border-radius: 10px;
+}
 /* The "Forgot password" text */
 span.psw {
   float: right;
@@ -85,6 +87,6 @@ html {
   background-image: url(../views/img/fundoRodape.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
 }
