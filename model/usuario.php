@@ -105,7 +105,24 @@ class usuario {
                     return false;
                 }
             }
-        
+            public function listaCadastrados()
+            {
+                require_once 'ConexaoBD.php';
+            
+                $con = new ConexaoBD();
+                $conn = $con->conectar();
+                
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
+                
+                $sql = "SELECT usuario_Id, usuario_nome, usuario_email FROM usuario;" ;
+                $re = $conn->query($sql);
+                $conn->close();
+                return $re;
+                }
+            
+
     } 
 
 ?>
