@@ -14,16 +14,24 @@
     <div id="corpo-form">
     <h1>Controle Administrador</h1>  
 
+    <p> Selecione a função desejada
     <div class="container">
         <ul class="nav nav-tabs">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Disponibilizar Agenda</a></li>
+        <li><a href="../views/cadastroServico.php">Cadastrar Serviço</a></li>
         <li><a href="../views/listaCliente.php">Ver CLientes</a></li>
         <li><a href="../views/listaADM.php">Ver Administradores</a></li>
-        <li><a href="#">Ver Agendamentos </a></li>
+        <li><a href="../views/listaAgendamentos">Ver Agendamentos </a></li>
     </ul>
     <br>
-    <p> Selecione a função desejada
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+
+    <a href="../index.html"> Voltar para tela inicial</a>
 </div>
 </body>
 </html>
