@@ -11,6 +11,7 @@
     <title>Lista de Agendamentos</title>
 </head>
 <body>
+
   <div id="corpo-form">
         <h1>Agendamentos Confirmados</h1>
 
@@ -22,6 +23,7 @@
           <th>Serviço</th>
           <th>Cliente</th>
         </tr>
+
       </thead>
     </table>
 

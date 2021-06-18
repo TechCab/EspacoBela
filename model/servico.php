@@ -5,7 +5,7 @@ class servico {
     private $preco;
     private $descricao;
     private $tempo;
-}
+
 public function setID($id)
 {
     $this-> id= $id;
@@ -37,6 +37,7 @@ public function setTempo($tempo)
 public function getTempo()
 {
     return $this->tempo;
+    }
 }
 
 ?>

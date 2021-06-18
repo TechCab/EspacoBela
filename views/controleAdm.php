@@ -21,7 +21,7 @@
         <li><a href="../views/cadastroServico.php">Cadastrar Serviço</a></li>
         <li><a href="../views/listaCliente.php">Ver CLientes</a></li>
         <li><a href="../views/listaADM.php">Ver Administradores</a></li>
-        <li><a href="../views/listaAgendamentos">Ver Agendamentos </a></li>
+        <li><a href="../views/listaAgendamentos.php">Ver Agendamentos </a></li>
     </ul>
     <br>
     <br>
