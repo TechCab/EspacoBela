@@ -23,15 +23,22 @@
     <table class="table">
       <thead>
         <tr>
-          <th>Nome</th>
-          <th>Sobrenome</th>
-          <th>Email</th>
+        <th>Data</th>
+          <th>Hora</th>
+          <th>Serviço</th>
+          <th>Cliente</th>
         </tr>
       </thead>
-
     </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <a href="../index.html"> Voltar para tela inicial</a>
   </div>
-
 </body>
-
 </html>

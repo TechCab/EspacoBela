@@ -25,6 +25,24 @@
         <div id="corpo-form">
         <h1>Clientes Cadastrados</h1>
 
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+    </table>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+
+    <a href="../index.html"> Voltar para tela inicial</a>
 </body>
 </html>
