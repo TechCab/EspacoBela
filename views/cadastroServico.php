@@ -15,7 +15,7 @@
             <input type="number" name="preco_serv" required="required" placeholder="Qual Preço?">
             <input type="number" name="tempo_serv" required="required"  placeholder="Qual o tempo de execução do serviço?"> 
             <input type="submit" value="Cadastrar">    
-            <a href="index.html"> Voltar para tela inicial <strong>aqui</a>
+            <a href="../index.html"> Voltar para tela inicial <strong>aqui</a>
         </form>
     </div>
 </body>

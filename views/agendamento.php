@@ -41,7 +41,7 @@
 	</select><br />
  
     <input type="submit" name="btnAgendar" value="Agendar"> 
-    <a href="/views/index.html"> Voltar para tela inicial <strong>aqui</a>
+    <a href="../index.html"> Voltar para tela inicial <strong>aqui</a>
 </form>
 </div>
 </body>

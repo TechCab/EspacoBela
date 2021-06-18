@@ -17,11 +17,11 @@
         <input type="password"  name="senha_cad" required="required" placeholder="Senha">
         <input type="submit" name="btnLogin" value="Login"> 
   
-        <a href="cadastroUsuario.php"> Novo por aqui? <strong>Cadastre-se</a>
-        <a href=""> Esqueceu senha? <strong>Recupere</a>
-</form>
+        <a href="cadastroUsuario.php"> Novo por aqui? <strong>Cadastre-se</a><br>
+        <a href=""> Esqueceu senha? <strong>Recupere</a><br>
+        <a href="../index.html"> Voltar para tela inicial</a<br>
+    </form>
 </div>
-   
         
 </body>
 </html>

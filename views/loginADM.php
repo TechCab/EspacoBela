@@ -17,8 +17,9 @@
         <input type="password"  name="senha_adm" required="required" placeholder="Senha">
         <input type="submit" name="btnLoginADM" value="Login"> 
   
-        <a href="../views/cadastroADM.php"> Novo por aqui? <strong>Cadastre-se</a>
-        <a href=""> Esqueceu senha? <strong>Recupere</a>
+        <a href="../views/cadastroADM.php"> Novo por aqui? <strong>Cadastre-se</a><br>
+        <a href=""> Esqueceu senha? <strong>Recupere</a><br>
+        <a href="../index.html"> Voltar para tela inicial</a<br><br>
 </form>
 </div>
    
