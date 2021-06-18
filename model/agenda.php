@@ -5,6 +5,7 @@ class Agenda {
     private $hora;
     private $data;
     private $status;
+    private $servico;
 
         public function setID($id)
         {
@@ -30,14 +31,17 @@ class Agenda {
         {
             return $this->data;
         }
-        public function setStatus($status)
+        
+        public function setServico($servico)
         {
-            $this->status = $status;
+            $this->servico = $servico;
         }
-        public function getStatus()
+        public function getServico()
         {
-            return $this->status;
+            return $this->servico;
         }
+
+
 
         public function inserirBD()
         {
@@ -49,8 +53,8 @@ class Agenda {
                 die("Connection failed: " . $conn->connect_error);
             } 
     
-            $sql = "INSERT INTO agenda (agenda_hora, agenda_data)
-            VALUES ('".$this->hora."', '".$this->data."')";
+            $sql = "INSERT INTO agenda (agenda_hora, servico, agenda_data)
+            VALUES ('".$this->hora."', '".$this->servico."', '".$this->data."' )";
     
             if ($conn->query($sql) === TRUE) {
                 $this->id = mysqli_insert_id($conn);
@@ -64,6 +68,22 @@ class Agenda {
                 return FALSE;	
             }
         }
+
+        public function listaAgendamento($id)
+        {
+            require_once 'ConexaoBD.php';   
+            
+            $con = new ConexaoBD();
+            $conn = $con->conectar();
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            } 
+        
+            $sql = "SELECT * FROM agenda WHERE agenda_id =  '".$id."'" ;
+            $re = $conn->query($sql);
+            $conn->close();
+            return $re;
+            }  
 
     }
 

@@ -7,15 +7,25 @@ if(!isset($_SESSION))
 class AgendaController{
     
     
-    public function inserir($hora, $data) {
-        require_once '../Model/agenda.php';
+    public function inserir($hora, $servico, $data) {
+        require_once '../model/agenda.php';
         $agenda = new Agenda();
         $agenda->setHora($hora);
+        $agenda->setServico($servico); 
         $agenda->setData($data);     
         $r = $agenda->inserirBD();
         $_SESSION['agenda'] = serialize($agenda);
         return $r;     
     }
+
+    public function gerarLista($id)
+    {
+        require_once '../model/agenda.php';
+        $agenda = new Agenda();
+        
+        return $results = $agenda->listaAgendamento($id);
+    }
+    
 }
 
 

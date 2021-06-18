@@ -14,6 +14,16 @@
 </head>
 
 <body>
+          <?php
+          
+          include_once '../controller/AgendaController.php';
+
+          if(!isset($_SESSION)) 
+              { 
+                  session_start(); 
+              }
+          ?>
+
   <div id="corpo-form">
     <h1>Confirmação de Agendamento</h1>
 
@@ -28,6 +38,24 @@
           <th>Serviço</th>
           <th>Cliente</th>
         </tr>
+        <?php
+                   
+                   $fCon = new AgendaController();
+                    $results = $fCon->gerarLista(unserialize($_SESSION['agenda'])->getID());
+                    if($results != null)
+                    
+                    while($row = $results->fetch_object()) {
+                        echo '<tr>';
+                        echo '<td>'.$row->agenda_data.'</td>';
+                        echo '<td>'.$row->agenda_hora.'</td>';
+                        echo '<td>'.$row->servico.'</td>';
+                        echo '<td>'.$row->agenda_id.'</td>';
+                        echo '<td>';                       
+                        echo '</tr>';
+                    } 
+        
+        ?>
+
       </thead>
     </table>
 

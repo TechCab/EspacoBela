@@ -70,10 +70,11 @@
                             {    
                                 if(isset($_POST["btnAgendar"]))
                                     {
-                                        require_once '../Controller/AgendaController.php';
+                                        require_once '../controller/AgendaController.php';
+                                
                                         $uController = new AgendaController();
                                 
-                                    if($uController->inserir ($_POST["horario"], date('Y-m-d', strtotime($_POST['dataAgenda_cliente']))))
+                                    if($uController->inserir ($_POST["horario"], $_POST["servico"], date('Y-m-d', strtotime($_POST['dataAgenda_cliente']))))
                                     {
                                         include_once '../views/confirmaAgendamento.php';
                                     }
