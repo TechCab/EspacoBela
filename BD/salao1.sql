@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 17-Jun-2021 às 05:36
+-- Generation Time: 19-Jun-2021 às 06:16
 -- Versão do servidor: 5.6.34
 -- PHP Version: 7.1.11
 
@@ -56,17 +56,31 @@ CREATE TABLE `agenda` (
   `agenda_id` int(5) NOT NULL,
   `agenda_data` date NOT NULL,
   `agenda_hora` text NOT NULL,
-  `servico_Id` int(5) NOT NULL
+  `servico` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `agenda`
 --
 
-INSERT INTO `agenda` (`agenda_id`, `agenda_data`, `agenda_hora`, `servico_Id`) VALUES
-(6, '2021-06-26', '17:00', 0),
-(9, '2021-06-22', '09:00', 0),
-(10, '2021-06-18', '14:00', 0);
+INSERT INTO `agenda` (`agenda_id`, `agenda_data`, `agenda_hora`, `servico`) VALUES
+(31, '2021-06-18', '19:00', 'Progressiva'),
+(32, '2021-06-18', '19:00', 'Progressiva'),
+(33, '2021-06-25', '19:00', 'Maquiagem'),
+(34, '2021-06-26', '14:00', 'Luzes'),
+(35, '2021-06-26', '14:00', 'Luzes'),
+(36, '2021-06-26', '14:00', 'Luzes'),
+(37, '2021-06-26', '14:00', 'Luzes'),
+(38, '2021-06-23', '11:00', 'DepilaÃ§Ã£o'),
+(39, '2021-06-21', '09:00', 'Manicure'),
+(40, '2021-06-29', '09:00', 'Manicure'),
+(41, '2021-06-29', '09:00', 'Manicure'),
+(42, '2021-06-29', '09:00', 'Manicure'),
+(43, '2021-06-24', '09:00', 'Manicure'),
+(44, '2021-06-24', '09:00', 'Manicure'),
+(45, '2021-06-24', '09:00', 'Manicure'),
+(46, '2021-06-24', '09:00', 'Manicure'),
+(47, '2021-06-24', '09:00', 'Manicure');
 
 -- --------------------------------------------------------
 
@@ -95,13 +109,6 @@ CREATE TABLE `servico` (
   `servico_descrição` text NOT NULL,
   `servico_runtime` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `servico`
---
-
-INSERT INTO `servico` (`servico_Id`, `servico_preco`, `servico_descrição`, `servico_runtime`) VALUES
-(1, '25.00', 'Manicure', '01:00:00');
 
 -- --------------------------------------------------------
 
@@ -140,8 +147,7 @@ ALTER TABLE `administrador`
 -- Indexes for table `agenda`
 --
 ALTER TABLE `agenda`
-  ADD PRIMARY KEY (`agenda_id`),
-  ADD KEY `servico_Id_fk` (`servico_Id`);
+  ADD PRIMARY KEY (`agenda_id`);
 
 --
 -- Indexes for table `cliente`
@@ -175,7 +181,7 @@ ALTER TABLE `administrador`
 -- AUTO_INCREMENT for table `agenda`
 --
 ALTER TABLE `agenda`
-  MODIFY `agenda_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `agenda_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `cliente`
@@ -187,7 +193,7 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT for table `servico`
 --
 ALTER TABLE `servico`
-  MODIFY `servico_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `servico_Id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `usuario`
