@@ -1,0 +1,85 @@
+===Base de Dados salao1
+
+== Estrutura da tabela administrador
+
+|------
+|Coluna|Tipo|Nulo|Predefinido
+|------
+|//**idAdministrador**//|int(11)|Não|
+|nome|varchar(45)|Sim|NULL
+|email|varchar(45)|Não|
+|senha|varchar(45)|Não|
+== Extraindo dados da tabela administrador
+
+|2|Teste|teste@adm.com.br|112233
+|3|Teste|teste@adm.com.br|112233
+|4|Teste|teste@adm.com.br|112233
+|5|Thiago|thiago@teste.com.br|112233
+|6|Thiago|thiago@teste.com.br|112233
+== Estrutura da tabela agenda
+
+|------
+|Coluna|Tipo|Nulo|Predefinido
+|------
+|//**agenda_id**//|int(5)|Não|
+|agenda_data|date|Não|
+|agenda_hora|text|Não|
+|servico|text|Não|
+== Extraindo dados da tabela agenda
+
+|31|2021-06-18|19:00|Progressiva
+|32|2021-06-18|19:00|Progressiva
+|33|2021-06-25|19:00|Maquiagem
+|34|2021-06-26|14:00|Luzes
+|35|2021-06-26|14:00|Luzes
+|36|2021-06-26|14:00|Luzes
+|37|2021-06-26|14:00|Luzes
+|38|2021-06-23|11:00|DepilaÃ§Ã£o
+|39|2021-06-21|09:00|Manicure
+|40|2021-06-29|09:00|Manicure
+|41|2021-06-29|09:00|Manicure
+|42|2021-06-29|09:00|Manicure
+|43|2021-06-24|09:00|Manicure
+|44|2021-06-24|09:00|Manicure
+|45|2021-06-24|09:00|Manicure
+|46|2021-06-24|09:00|Manicure
+|47|2021-06-24|09:00|Manicure
+== Estrutura da tabela cliente
+
+|------
+|Coluna|Tipo|Nulo|Predefinido
+|------
+|//**cliente_Id**//|int(5)|Não|
+|cliente_nome|varchar(45)|Não|
+|cliente_senha|varchar(45)|Não|
+|cliente_email|varchar(45)|Não|
+|cliente_data_nasc|date|Sim|NULL
+|cliente_data_cadastro|date|Não|
+== Extraindo dados da tabela cliente
+
+== Estrutura da tabela servico
+
+|------
+|Coluna|Tipo|Nulo|Predefinido
+|------
+|//**servico_Id**//|int(5)|Não|
+|servico_preco|decimal(10,2)|Não|
+|servico_descrição|text|Não|
+|servico_runtime|time|Não|
+== Extraindo dados da tabela servico
+
+== Estrutura da tabela usuario
+
+|------
+|Coluna|Tipo|Nulo|Predefinido
+|------
+|//**usuario_Id**//|int(5)|Não|
+|usuario_nome|varchar(45)|Não|
+|usuario_senha|varchar(45)|Não|
+|usuario_email|varchar(45)|Não|
+== Extraindo dados da tabela usuario
+
+|1|Teste|112233|teste@teste.com.br
+|2|Thiago Carneiro CaraÃºba|112233|carauba.guitar@gmail.com
+|3|teste2|112233|teste2@teste.com.br
+|4|teste2|112233|teste2@teste.com.br
