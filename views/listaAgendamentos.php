@@ -34,7 +34,7 @@
     <br>
     <br>
   
-
+    <a href="../controleAdm.html"> Voltar tela anterior</a> <br>
     <a href="../index.html"> Voltar para tela inicial</a>
 </body>
 </html>
