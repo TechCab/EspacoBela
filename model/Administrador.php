@@ -102,7 +102,7 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        $sql = "SELECT idAdministrador, nome, id FROM administrador;" ;
+        $sql = "SELECT idAdministrador, nome, email FROM administrador;" ;
         $re = $conn->query($sql);
         $conn->close();
         return $re;

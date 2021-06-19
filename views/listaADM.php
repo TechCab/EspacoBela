@@ -28,10 +28,27 @@
     <table class="table">
       <thead>
         <tr>
+          <th>ID</th>
           <th>Nome</th>
-          <th>Sobrenome</th>
           <th>Email</th>
         </tr>
+
+        <?php
+                   
+                   $fCon = new ADMController();
+                    $results = $fCon->gerarLista();
+                    if($results != null)
+                    
+                    while($row = $results->fetch_object()) {
+                        echo '<tr>';
+                        echo '<td>'.$row->idAdministrador.'</td>';
+                        echo '<td>'.$row->nome.'</td>';
+                        echo '<td>'.$row->email.'</td>';                        
+                        echo '<td>';                       
+                        echo '</tr>';
+                    } 
+        
+        ?>
       </thead>
     </table>
     

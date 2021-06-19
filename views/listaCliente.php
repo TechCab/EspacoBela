@@ -28,10 +28,27 @@
     <table class="table">
       <thead>
         <tr>
+          <th>ID</th>
           <th>Nome</th>
-          <th>Sobrenome</th>
           <th>Email</th>
         </tr>
+       
+        <?php
+                   
+                   $fCon = new UsuarioController();
+                    $results = $fCon->gerarLista();
+                    if($results != null)
+                    
+                    while($row = $results->fetch_object()) {
+                        echo '<tr>';
+                        echo '<td>'.$row->usuario_Id.'</td>';
+                        echo '<td>'.$row->usuario_nome.'</td>';
+                        echo '<td>'.$row->usuario_email.'</td>';                        
+                        echo '<td>';                       
+                        echo '</tr>';
+                    } 
+        
+        ?>
       </thead>
     </table>
 

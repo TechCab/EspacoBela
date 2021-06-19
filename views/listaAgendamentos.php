@@ -12,6 +12,16 @@
 </head>
 <body>
 
+<?php
+          
+          include_once '../controller/AgendaController.php';
+          
+          if(!isset($_SESSION)) 
+              { 
+                  session_start(); 
+              }
+          ?>
+
   <div id="corpo-form">
         <h1>Agendamentos Confirmados</h1>
 
@@ -24,6 +34,24 @@
           <th>Cliente</th>
         </tr>
 
+        <?php
+                   
+                   $fCon = new AgendaController();
+                    $results = $fCon->gerarLista($id);
+                    if($results != null)
+                    
+                    while($row = $results->fetch_object()) {
+                        echo '<tr>';
+                        echo '<td>'.$row->agenda_data.'</td>';
+                        echo '<td>'.$row->agenda_hora.'</td>';
+                        echo '<td>'.$row->servico.'</td>';
+                        echo '<td>'.$row->agenda_id.'</td>';
+                        echo '<td>';                       
+                        echo '</tr>';
+                    } 
+        
+        ?>
+
       </thead>
     </table>
 
@@ -34,7 +62,7 @@
     <br>
     <br>
   
-    <a href="../controleAdm.html"> Voltar tela anterior</a> <br>
+    <a href="./controleAdm.php"> Voltar tela anterior</a> <br>
     <a href="../index.html"> Voltar para tela inicial</a>
 </body>
 </html>

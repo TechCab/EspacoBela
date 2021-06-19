@@ -35,7 +35,17 @@ class ADMController{
             return false;
         } 
     }
+    
+    public function gerarLista()
+    {
+        require_once '../model/Administrador.php';
+        $administrador = new Administrador();
 
+        return $results = $administrador->listaCadastrados();
+    }
 }
+    
+
+
 
 ?>
