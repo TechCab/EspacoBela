@@ -18,12 +18,12 @@ class AgendaController{
         return $r;     
     }
 
-    public function gerarLista($id)
+    public function gerarLista()
     {
         require_once '../model/agenda.php';
         $agenda = new Agenda();
         
-        return $results = $agenda->listaAgendamento($id);
+        return $results = $agenda->listaAgendamento();
     }
     
 }

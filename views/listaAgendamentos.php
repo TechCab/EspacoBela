@@ -37,7 +37,7 @@
         <?php
                    
                    $fCon = new AgendaController();
-                    $results = $fCon->gerarLista($id);
+                    $results = $fCon->gerarLista();
                     if($results != null)
                     
                     while($row = $results->fetch_object()) {

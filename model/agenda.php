@@ -69,7 +69,7 @@ class Agenda {
             }
         }
 
-        public function listaAgendamento($id)
+        public function listaAgendamento()
         {
             require_once 'ConexaoBD.php';   
             
@@ -79,7 +79,7 @@ class Agenda {
                 die("Connection failed: " . $conn->connect_error);
             } 
         
-            $sql = "SELECT * FROM agenda WHERE agenda_id =  '".$id."'" ;
+            $sql = "SELECT * FROM agenda " ;
             $re = $conn->query($sql);
             $conn->close();
             return $re;
