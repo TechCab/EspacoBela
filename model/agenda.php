@@ -4,7 +4,7 @@ class Agenda {
     private $id;
     private $hora;
     private $data;
-    private $status;
+    private $usuario_id;
     private $servico;
 
         public function setID($id)
@@ -32,6 +32,15 @@ class Agenda {
             return $this->data;
         }
         
+        public function setUsuario_ID($usuario_id)
+        {
+            $this->usuario_id = $usuario_id;
+        }
+        public function getUsuario_ID()
+        {
+            return $this->usuario_id;
+        }
+       
         public function setServico($servico)
         {
             $this->servico = $servico;
@@ -53,8 +62,8 @@ class Agenda {
                 die("Connection failed: " . $conn->connect_error);
             } 
     
-            $sql = "INSERT INTO agenda (agenda_hora, servico, agenda_data)
-            VALUES ('".$this->hora."', '".$this->servico."', '".$this->data."' )";
+            $sql = "INSERT INTO agenda (agenda_hora, servico, agenda_data, usuario_id)
+            VALUES ('".$this->hora."', '".$this->servico."', '".$this->data."' , '".$this->usuario_id."' )";
     
             if ($conn->query($sql) === TRUE) {
                 $this->id = mysqli_insert_id($conn);
@@ -79,7 +88,8 @@ class Agenda {
                 die("Connection failed: " . $conn->connect_error);
             } 
         
-            $sql = "SELECT * FROM agenda " ;
+            $sql = "SELECT agenda_data, agenda_hora, servico, usuario_nome FROM agenda, usuario 
+            WHERE agenda.usuario_id = usuario.usuario_Id " ;
             $re = $conn->query($sql);
             $conn->close();
             return $re;

@@ -45,7 +45,7 @@
                         echo '<td>'.$row->agenda_data.'</td>';
                         echo '<td>'.$row->agenda_hora.'</td>';
                         echo '<td>'.$row->servico.'</td>';
-                        echo '<td>'.$row->agenda_id.'</td>';
+                        echo '<td>'.$row->usuario_nome.'</td>';
                         echo '<td>';                       
                         echo '</tr>';
                     } 
