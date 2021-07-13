@@ -5,17 +5,26 @@ Agenda virtual para otimizar a rotina do empreendedor e do cliente. A funcionali
 Status
 ============
 ```
-Projeto em andamento.
+Projeto Concluído
 ```
 
 Funcionalidades
 =====
 ```
-- [ ] Login
-  [ ] Cadastro de usuário
-- [ ] Cadastro de profissional
-- [ ] Cadastro de serviços
-- [ ] Cadastro de agenda
-- [ ] Consulta de agendamento
-- [ ] Relatórios para controle
+- [x] Login
+  [x] Cadastro de usuário
+- [x] Cadastro de profissional
+- [x] Cadastro de serviços
+- [x] Cadastro de agenda
+- [x] Consulta de agendamento
+
+```
+
+Instalação do projeto
+=====
+```
+Necessario servidor local no WAMP e XAMP.
+
+Criar banco de dados no MySQL conforme script BD anexo
+
 ```
